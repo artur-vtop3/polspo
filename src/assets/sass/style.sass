@@ -615,3 +615,40 @@ ul li.active
 
 @import url(./catalog.css)
 @import url(./product.css)
+.modal
+  background: rgba(0, 0, 0, 0.8)
+  @apply absolute w-[100vw] h-[100vh] flex items-center justify-center z-[999]
+  @media screen and (max-width: 640px)
+    @apply bg-dark
+  &-close
+    filter: invert(121%) sepia(8%) saturate(304%) hue-rotate(22deg) brightness(103%) contrast(88%)
+
+    @apply absolute w-[32px] h-[32px] top-[8px] right-[8px] cursor-pointer
+  &-wrapper
+    @apply flex flex-col bg-dark max-w-[570px] py-[40px] px-[64px] items-center relative
+    @media screen and (max-width: 640px)
+      @apply px-[10px]
+  &-inner
+    @apply w-full flex flex-col gap-[16px]
+    button
+      @apply mt-[16px] mr-auto mb-[16px]
+    .input-q
+      @apply flex-col
+      span
+        @apply w-full
+      input
+        @apply h-[55px]
+  &-title
+    @apply mb-[24px] text-fz24 font-black
+  &-desc
+    @apply mb-[40px]
+  &-text
+    font-size: 14px
+    line-height: 14px
+    color: rgba(255, 255, 232, 0.6)
+    position: relative
+    &::before
+      content: "*"
+      @apply -left-[10px] top-0 absolute text-red-700
+.hidden
+  display: none

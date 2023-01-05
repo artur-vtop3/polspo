@@ -9,11 +9,29 @@ html(lang="en")
     link(rel="stylesheet" href="./assets/css/style.css")
   body 
     header.header
+      .modal.hidden
+        .modal-wrapper
+          img(src="./assets/img/close.svg" alt="").modal-close
+          .modal-title Для обратной связи
+          .modal-desc Оставьте нам свои данные и вопрос который вас интересует. Мы перезвоним вам в течении 30 минут.
+          form.modal-inner
+            label(for="name").input.input-name 
+              span Имя
+              input(type="text" name="name" id="name")
+            label(for="phone").input.input-phone 
+              span Телефон
+              input(type="text" name="phone" id="phone")
+            label(for="phone").input.input-q 
+              span Введите интересующий вас вопрос
+              input(type="text" name="phone" id="phone")
+            button(type="submit").button заказать звонок
+          .modal-text Мы не передаём ваши личные данные сторонним лицам и не используем их с целью рассылки рекламы без вашего согласия
+
       .header-top
         a(href="#").header-logo-link
           img.header-logo(src="./assets/img/polspo-logo.svg" alt="logo")
         .header-links
-          a.button.button-sm(href="#") 
+          button.button.button-sm.modal-open
             span заказать звонок
           a.button.button-sm.button-outline.hidden-1280(href="#") 
             img(src="./assets/img/library.svg" alt="catalog image")

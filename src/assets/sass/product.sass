@@ -112,3 +112,42 @@
   .news-items
     @media screen and (max-width: 620px)
       @apply grid-cols-3 grid
+.single-top
+  @apply items-start
+  &-title
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+    text-overflow: ellipsis
+.single
+  &-inner
+    @apply grid grid-cols-12 gap-[24px] mb-[80px]
+  &-title
+    @apply col-span-7 col-start-6 text-fz56 leading-[100%] font-black uppercase
+  &-img
+    @apply col-span-4 row-span-2 row-start-1 float-left
+  &-text
+    @apply col-span-7 col-start-6 row-start-2
+@media screen and (max-width: 1400px)
+  .single
+    &-inner
+      @apply block clear-both
+    &-title
+      margin-bottom: 32px
+    &-img
+      @apply max-w-[500px] float-left mr-[24px] mb-[80px]
+@media screen and (max-width: 900px)
+  .single
+    &-title
+      font-size: 32px
+    &-img
+      @apply max-w-full
+@media screen and (max-width: 580px)
+  .single
+    &-title
+      font-size: 24px
+    &-text
+      font-size: 12px
+    &-img
+      margin-bottom: 32px

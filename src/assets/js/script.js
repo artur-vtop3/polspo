@@ -109,3 +109,14 @@ aboutBtn.addEventListener('click', () => {
     ? (aboutBtn.querySelector('span').textContent = 'свернуть текст')
     : (aboutBtn.querySelector('span').textContent = 'развернуть текст')
 })
+
+const modal = document.querySelector('.modal')
+const modalOpen = document.querySelector('.modal-open')
+const modalClose = document.querySelector('.modal-close')
+
+modalOpen.addEventListener('click', () => {
+  modal.classList.toggle('hidden')
+})
+modalClose.addEventListener('click', () => {
+  modal.classList.toggle('hidden')
+})
