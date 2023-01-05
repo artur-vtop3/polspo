@@ -70,8 +70,17 @@ if (windowInnerWidth <= 620) {
   })
 }
 const tabItems = document.querySelectorAll('.products-tab')
+const blockItems = document.querySelectorAll('.block')
 tabItems.forEach((element) => {
   element.addEventListener('click', (e) => {
+    const block = element.dataset.block
+    blockItems.forEach((b) => {
+      if (b.dataset.block === block) {
+        b.classList.remove('hidden')
+        return
+      }
+      b.classList.add('hidden')
+    })
     tabItems.forEach((element) => {
       element.classList.remove('active')
     })

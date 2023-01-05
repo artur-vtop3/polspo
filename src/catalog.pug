@@ -131,17 +131,17 @@ html(lang="en")
         .products-top
           p.products-top-desc Для удобства пользования каталогом воспользуйтесь фильтром по разделам
           .products-tabs
-            button.button.button-sm.button-outline.products-tab(href="#").active
+            button.button.button-sm.button-outline.products-tab(href="#" data-block="1")
               span защитные шлемы
-            button.button.button-sm.button-outline.products-tab(href="#") 
+            button.button.button-sm.button-outline.products-tab(href="#" data-block="2") 
               span спортивные шлемы
-            button.button.button-sm.button-outline.products-tab(href="#") 
+            button.button.button-sm.button-outline.products-tab(href="#" data-block="3") 
               span защита суставов
-            button.button.button-sm.button-outline.products-tab(href="#") 
+            button.button.button-sm.button-outline.products-tab(href="#" data-block="4") 
               span защитные жилеты
-            button.button.button-sm.button-outline.products-tab(href="#") 
+            button.button.button-sm.button-outline.products-tab(href="#" data-block="5") 
               span иная продукция
-            button.button.button-sm.button-outline.products-tab(href="#") 
+            button.button.button-sm.button-outline.products-tab(href="#" data-block="6") 
               span реплики
           h1.products-top-title
             span каталог
@@ -150,51 +150,98 @@ html(lang="en")
         .bg-text
           span спортивные
           span шлемы
-        h2.title.products-title 
-          span конный спорт
-        .products-inner
-          .products-desc 
-            span Шлем для верховой езды – бесспорно важнейший элемент экипировки всадника. Садиться на лошадь или пони без шлема запрещено. В этом вопросе мы не полагаемся на случайность и предлагаем Вам лучшие шлемы. <br><br>Мы серьезно относимся к вашей безопасности. Поэтому шлемы для верховой езды нашего производства соответствуют необходимым нормам безопасности. Все шлемы «Аскот К» тестируются в лабораторных условиях, а наши конструкторы постоянно совершенствуют их эргономические характеристики, чтобы обеспечить Вам максимальный комфорт.
-            a.button.button-sm.button-outline.products-desc-button(href="#") 
-              img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
-              span подробнее
-          .products-items.products-slider
-            .products-items.products-slider-wrapper
-              .products-item
-                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
-                p.products-item-title Аскот К1
-                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
-                a.button.button-sm.button-outline.products-item-button(href="#") 
-                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
-                  span подробнее
-              .products-item
-                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
-                p.products-item-title Аскот К1
-                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
-                a.button.button-sm.button-outline.products-item-button(href="#") 
-                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
-                  span подробнее
-              .products-item
-                img.products-item-img(src="https://picsum.photos/200/300" alt="")
-                p.products-item-title Аскот К1
-                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
-                a.button.button-sm.button-outline.products-item-button(href="#") 
-                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
-                  span подробнее
-              .products-item
-                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
-                p.products-item-title Аскот К1
-                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
-                a.button.button-sm.button-outline.products-item-button(href="#") 
-                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
-                  span подробнее
-              .products-item
-                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
-                p.products-item-title Аскот К1
-                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
-                a.button.button-sm.button-outline.products-item-button(href="#") 
-                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
-                  span подробнее
+        .block(data-block="1")
+          h2.title.products-title 
+            span конный спорт
+          .products-inner
+            .products-desc 
+              span Шлем для верховой езды – бесспорно важнейший элемент экипировки всадника. Садиться на лошадь или пони без шлема запрещено. В этом вопросе мы не полагаемся на случайность и предлагаем Вам лучшие шлемы. <br><br>Мы серьезно относимся к вашей безопасности. Поэтому шлемы для верховой езды нашего производства соответствуют необходимым нормам безопасности. Все шлемы «Аскот К» тестируются в лабораторных условиях, а наши конструкторы постоянно совершенствуют их эргономические характеристики, чтобы обеспечить Вам максимальный комфорт.
+              a.button.button-sm.button-outline.products-desc-button(href="#") 
+                img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                span подробнее
+            .products-items.products-slider
+              .products-items.products-slider-wrapper
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="https://picsum.photos/200/300" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+        .block(data-block="2")
+          h2.title.products-title 
+            span Спортивные шлемы
+          .products-inner
+            .products-desc 
+              span Шлем для верховой езды – бесспорно важнейший элемент экипировки всадника. Садиться на лошадь или пони без шлема запрещено. В этом вопросе мы не полагаемся на случайность и предлагаем Вам лучшие шлемы. <br><br>Мы серьезно относимся к вашей безопасности. Поэтому шлемы для верховой езды нашего производства соответствуют необходимым нормам безопасности. Все шлемы «Аскот К» тестируются в лабораторных условиях, а наши конструкторы постоянно совершенствуют их эргономические характеристики, чтобы обеспечить Вам максимальный комфорт.
+              a.button.button-sm.button-outline.products-desc-button(href="#") 
+                img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                span подробнее
+            .products-items.products-slider
+              .products-items.products-slider-wrapper
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="https://picsum.photos/200/300" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
+                .products-item
+                  img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                  p.products-item-title Аскот К1
+                  p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                  a.button.button-sm.button-outline.products-item-button(href="#") 
+                    img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                    span подробнее
     footer.footer
       .footer-wrap
         .footer-block
