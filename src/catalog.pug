@@ -1,0 +1,261 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Polspo
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+    link(rel="stylesheet" href="./assets/css/style.css")
+  body 
+    header.header
+      .header-top
+        a(href="#").header-logo-link
+          img.header-logo(src="./assets/img/polspo-logo.svg" alt="logo")
+        .header-links
+          a.button.button-sm(href="#") 
+            span заказать звонок
+          a.button.button-sm.button-outline.hidden-1280(href="#") 
+            img(src="./assets/img/library.svg" alt="catalog image")
+            span Каталог
+          a.header-link.hidden-1280(href="#") 
+            span контакты
+          a.header-link.hidden-1280(href="#") 
+            span Документы
+          .header-menu-button
+            img(src="./assets/img/close.svg" alt="menu image")
+      nav.header-nav
+        ul.header-menu
+          li.header-menu-item.menu-item-parent
+            a.header-menu-link(href="#")
+              span каталог продукции
+            ul
+              li
+                a.underline(href="")  
+                  span каталог продукции
+              li.menu-item-parent
+                a(href="")  
+                  span 1. Средства защиты
+
+                ul
+                  li
+                    a.underline(href="")  
+                      span Средства защиты
+                  li
+                    a(href="")  
+                      span 1.1. Защитные шлемы
+                  li
+                    a(href="")  
+                      span 1.2. Спортивные шлемы
+                  li
+                    a(href="")  
+                      span 1.3. Реплики
+                  li
+                    a(href="")  
+                      span 1.4. Защитные жилеты
+                  li
+                    a(href="")  
+                      span 1.5. Защита коленного и локтевого суставов
+                  li
+                    a(href="")  
+                      span 1.6. Иная продукция
+
+              li.menu-item-parent
+                a(href="")  
+                  span 2. Средства бронезащиты
+                ul
+                  li
+                    a.underline(href="")  
+                      span Средства бронезащиты
+                  li
+                    a(href="")  
+                      span 2.1. Пулестойкие шлемы
+                  li
+                    a(href="")  
+                      span 2.2. Бронежилеты
+                  li
+                    a(href="")  
+                      span 2.3. Защитные очки
+                  li.menu-item-parent
+                    a(href="")  
+                      span 2.4. Одеяло защитное
+                    ul
+                      li
+                        a.underline(href="")  
+                          span Одеяло защитное
+                      li
+                        a(href="")  
+                          span 2.1. Пулестойкие шлемы
+                      li
+                        a(href="")  
+                          span 2.2. Бронежилеты
+              li.menu-item-parent
+                a(href="")  
+                  span 3. Противоударная защита
+                ul
+                  li
+                    a.underline(href="")  
+                      span Противоударная защита
+                  li
+                    a(href="")  
+                      span 3.1. Противоударные шлемы
+                  li
+                    a(href="")  
+                      span 3.2. Противоударные щиты
+                  li
+                    a(href="")  
+                      span 3.3. Комплекты защиты
+              li
+                a(href="")  
+                  span 4. Иная продукция
+
+          li.header-menu-item
+            a.header-menu-link(href="#")
+              span о компании
+          li.header-menu-item
+            a.header-menu-link(href="#")
+              span новости
+          li.header-menu-item
+            a.header-menu-link(href="#")
+              span наши клиенты
+          li.header-menu-item
+            a.header-menu-link(href="#")
+              span контакты
+          li.header-menu-item
+            a.header-menu-link(href="#")
+              span документы
+          a.button.button-sm.w-auto.visible640(href="#") 
+            span заказать звонок
+    main.main
+      section.products
+        .products-top
+          p.products-top-desc Для удобства пользования каталогом воспользуйтесь фильтром по разделам
+          .products-tabs
+            button.button.button-sm.button-outline.products-tab(href="#").active
+              span защитные шлемы
+            button.button.button-sm.button-outline.products-tab(href="#") 
+              span спортивные шлемы
+            button.button.button-sm.button-outline.products-tab(href="#") 
+              span защита суставов
+            button.button.button-sm.button-outline.products-tab(href="#") 
+              span защитные жилеты
+            button.button.button-sm.button-outline.products-tab(href="#") 
+              span иная продукция
+            button.button.button-sm.button-outline.products-tab(href="#") 
+              span реплики
+          h1.products-top-title
+            span каталог
+            span продукции
+
+        .bg-text
+          span спортивные
+          span шлемы
+        h2.title.products-title 
+          span конный спорт
+        .products-inner
+          .products-desc 
+            span Шлем для верховой езды – бесспорно важнейший элемент экипировки всадника. Садиться на лошадь или пони без шлема запрещено. В этом вопросе мы не полагаемся на случайность и предлагаем Вам лучшие шлемы. <br><br>Мы серьезно относимся к вашей безопасности. Поэтому шлемы для верховой езды нашего производства соответствуют необходимым нормам безопасности. Все шлемы «Аскот К» тестируются в лабораторных условиях, а наши конструкторы постоянно совершенствуют их эргономические характеристики, чтобы обеспечить Вам максимальный комфорт.
+            a.button.button-sm.button-outline.products-desc-button(href="#") 
+              img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+              span подробнее
+          .products-items.products-slider
+            .products-items.products-slider-wrapper
+              .products-item
+                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                p.products-item-title Аскот К1
+                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                a.button.button-sm.button-outline.products-item-button(href="#") 
+                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                  span подробнее
+              .products-item
+                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                p.products-item-title Аскот К1
+                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                a.button.button-sm.button-outline.products-item-button(href="#") 
+                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                  span подробнее
+              .products-item
+                img.products-item-img(src="https://picsum.photos/200/300" alt="")
+                p.products-item-title Аскот К1
+                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                a.button.button-sm.button-outline.products-item-button(href="#") 
+                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                  span подробнее
+              .products-item
+                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                p.products-item-title Аскот К1
+                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                a.button.button-sm.button-outline.products-item-button(href="#") 
+                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                  span подробнее
+              .products-item
+                img.products-item-img(src="./assets/img/placeholder.svg" alt="")
+                p.products-item-title Аскот К1
+                p.products-item-desc Защитный шлем Аскот «К1» предназначен для защиты головы...
+                a.button.button-sm.button-outline.products-item-button(href="#") 
+                  img(src="./assets/img/arrow-up-right.svg" alt="arrow image")
+                  span подробнее
+    footer.footer
+      .footer-wrap
+        .footer-block
+          p.footer-block-title Наши контакты
+            ul.footer-list
+              li.footer-item
+                a.footer-link(href="#") 
+                  img(src="./assets/img/phone.svg" alt="phone img")
+                  span +375 29 123 45 67
+              li.footer-item
+                a.footer-link(href="#") 
+                  img(src="./assets/img/mail.svg" alt="mail img")
+                  span polspo@polspo.com
+              li.footer-item
+                a.footer-link(href="#") 
+                  img(src="./assets/img/map-pin.svg" alt="map img")
+                  span Республика Беларусь, Витебская область, 211412, г.Полоцк, ул.Строительная, д.11, ком.303
+              li.footer-item
+                a.footer-link(href="#") 
+                  img(src="./assets/img/instagram.svg" alt="inst img")
+                  span.underline instagram.com/polspo_by
+        .footer-block
+          p.footer-block-title Время работы
+            ul.footer-list.footer-list-sm
+              li.footer-item
+                .footer-link 
+                  img(src="./assets/img/calendar-days.svg" alt="calendar img")
+                  span Понедельник-Четверг
+              li.footer-item
+                .footer-link 
+                  img(src="./assets/img/clock.svg" alt="clock img")
+                  span 9:00-17:00
+              li.footer-item
+                .footer-link 
+                  img(src="./assets/img/calendar-days.svg" alt="calendar img")
+                  span Пятница
+              li.footer-item
+                .footer-link 
+                  img(src="./assets/img/clock.svg" alt="clock img")
+                  span 9:00-16:00
+        .footer-block.col-span-2
+          p.footer-block-title Документы
+            ul.footer-list
+              li.footer-item
+                a.footer-link.footer-link-hover(href="#")    
+                  img(src="./assets/img/arrow-right.svg" alt="arrow img")
+                  span.underline Lorem ipsum 
+              li.footer-item
+                a.footer-link.footer-link-hover(href="#")    
+                  img(src="./assets/img/arrow-right.svg" alt="arrow img")
+                  span.underline Lorem ipsum 
+
+
+
+        .footer-block.col-span-4
+          p.footer-block-title Политика конфиденциальности
+            ul.footer-list.footer-list-full
+              li.footer-item
+                a.footer-link(href="#")    
+                  span.underline Lorem ipsum dolor sit amet consectetur. Morbi ut vitae consequat pharetra eget tristique sed semper. Senectus eget massa duis eu eget. Dignissim amet cursus nibh ornare. Leo pharetra neque nunc fringilla tellus. Molestie etiam urna turpis lobortis et ultri... 
+        a(href="#").footer-logo-link 
+          img.footer-logo(src="./assets/img/polspo-logo.svg" alt="logo")
+  script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js") 
+  script(src="./assets/js/catalog.js")   

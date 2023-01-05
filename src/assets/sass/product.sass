@@ -1,0 +1,114 @@
+
+.product
+  &-top
+    @apply flex justify-end items-center
+    @media screen and (max-width: 770px)
+      @apply  flex-wrap
+  &-bread
+    @apply text-light40 w-[610px] relative
+    &:after
+      content: ''
+      filter: invert(72%) sepia(12%) saturate(196%) hue-rotate(39deg) brightness(89%) contrast(86%)
+      @apply bg-arrow-r bg-no-repeat w-[48px] h-[48px] absolute top-1/2 -right-[56px] bg-cover -translate-y-1/2
+    @media screen and (max-width: 1280px)
+      @apply w-[480px] text-fz48
+    @media screen and (max-width: 960px)
+      @apply w-[380px] text-fz32
+      &:after
+        @apply w-[32px] h-[32px]
+    @media screen and (max-width: 770px)
+      @apply mr-auto mb-[16px] w-fit
+    @media screen and (max-width: 550px)
+      @apply text-fz16
+      &:after
+        @apply w-[24px] h-[24px] -right-[32px]
+  &-title
+    @apply w-[700px]
+    @media screen and (max-width: 1280px)
+      @apply w-[580px] text-fz48
+    @media screen and (max-width: 960px)
+      @apply w-[380px] text-fz32
+    @media screen and (max-width: 770px)
+      @apply w-[100%]
+    @media screen and (max-width: 550px)
+      @apply text-fz16
+  &-inner
+    @apply grid grid-cols-12 gap-[24px] mb-[160px] items-start
+    @media screen and (max-width: 840px)
+      @apply relative pt-[70px]
+    @media screen and (max-width: 740px)
+      @apply grid-cols-6
+  &-left
+    @apply grid grid-cols-4 col-span-4 gap-[24px]
+    img
+      &:first-child
+        @apply col-span-4
+      @media screen and (max-width: 540px)
+        &:nth-child(2)
+          @apply col-span-4
+
+        &:nth-child(3)
+          @apply col-span-2
+
+        &:nth-child(4)
+          @apply col-span-2
+        &:last-child
+          display: none
+    @media screen and (max-width: 1280px)
+      @apply col-span-5
+    @media screen and (max-width: 1080px)
+      @apply col-span-6
+  &-right
+    @apply flex flex-col col-span-6 col-start-6
+    @media screen and (max-width: 1600px)
+      @apply col-span-7 col-start-6
+    @media screen and (max-width: 1080px)
+      @apply col-span-6
+  &-name
+    flex-direction: row !important
+    @apply  gap-[16px]
+    @media screen and (max-width: 840px)
+      font-size: 32px !important
+      @apply absolute top-0 left-0
+    span
+      @apply text-primary
+  &-wrap
+    @apply flex flex-wrap gap-y-[24px] mt-[40px]
+  &-block
+    @apply w-1/2 flex flex-col
+    @media screen and (max-width: 1280px)
+      @apply w-full
+    p
+      @apply font-black text-fz24 leading-[100%] pr-[10px]
+      @media screen and (max-width: 550px)
+        @apply text-fz16
+    i
+      @apply border border-light p-[8px] mr-[8px] text-fz14 leading-[100%] font-black not-italic
+  &-inline
+    @apply flex-row items-center
+  &-bottom
+    @apply flex col-start-6 col-span-6 border border-light p-[32px] items-center
+    @media screen and (max-width: 1600px)
+      @apply col-span-7 col-start-6
+    @media screen and (max-width: 1280px)
+      @apply col-span-full justify-between
+    @media screen and (max-width: 740px)
+      @apply flex-col gap-y-[16px]
+    button
+      @apply shrink-0
+    p
+      letter-spacing: 0.08em
+      @apply leading-[20px]
+  &-subtitle
+    @apply text-fz32 uppercase mb-[16px] font-black text-primary
+    @media screen and (max-width: 600px)
+      font-size: 24px
+  .products-items
+    @apply grid-cols-12
+    @media screen and (max-width: 1600px)
+      @apply grid-cols-9
+    @media screen and (max-width: 1280px)
+      @apply grid-cols-6
+  .news-items
+    @media screen and (max-width: 620px)
+      @apply grid-cols-3 grid

@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "node_modules/": true,
+    ".browserslistrc": true,
+    ".gitignore": true,
+    ".prettierrc": true,
+    "postcss.config.js": true,
+    "gulpfile.js": true,
+    "package-lock.json": true,
+    "package.json": true,
+    "gulp/": true
+  }
+}
