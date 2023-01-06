@@ -151,3 +151,89 @@
       font-size: 12px
     &-img
       margin-bottom: 32px
+
+.docs
+  &-inner
+    @apply grid grid-cols-12 gap-[24px]
+  &-tab
+    font-size: 96px
+    line-height: 96px
+    letter-spacing: -0.04em
+    text-transform: uppercase
+    color: #ffffe8
+    font-family: 'Dela Gothic One'
+    border-bottom: 1px solid #ffffe8
+    padding-bottom: 12px
+
+    @apply flex items-center col-span-9 relative leading-[100%] cursor-pointer
+    @media screen and (max-width: 1500px)
+      @apply col-span-12
+    @media screen and (max-width: 1180px)
+      @apply text-fz80
+    &::after
+      content: ''
+      filter: invert(120%) sepia(12%) saturate(196%) hue-rotate(39deg) brightness(209%) contrast(186%)
+      @apply bg-arrow-r bg-no-repeat w-[96px] h-[96px] absolute top-1/2 -right-0 bg-cover -translate-y-1/2
+    &-active
+      color: #ffffe856
+      &::after
+        filter: invert(62%) sepia(12%) saturate(196%) hue-rotate(39deg) brightness(69%) contrast(86%)
+        @apply rotate-90
+    @media screen and (max-width: 1000px)
+      @apply text-fz56
+      &::after
+        @apply w-[48px] h-[48px]
+    @media screen and (max-width: 700px)
+      @apply text-fz24
+      &::after
+        @apply w-[24px] h-[24px]
+    &-item
+      @apply flex flex-col col-span-9 col-start-4
+      @media screen and (max-width: 1500px)
+        @apply col-start-auto col-span-12
+      &-active
+        .docs-tab-title
+          &::after
+            @apply rotate-90 top-full -translate-y-full
+    &-title
+      font-weight: 900
+      font-size: 56px
+      line-height: 56px
+      letter-spacing: -0.02em
+      text-transform: uppercase
+      color: #8C8DC5
+      border-bottom: 1px solid #8C8DC5
+      padding-bottom: 12px
+      @apply relative flex pr-[100px] cursor-pointer
+      &::after
+        content: ''
+        filter: invert(77%) sepia(12%) saturate(3034%) hue-rotate(194deg) brightness(82%) contrast(85%)
+        @apply bg-arrow-r bg-no-repeat w-[56px] h-[56px] absolute top-1/2 -right-0 bg-cover -translate-y-1/2
+
+      @media screen and (max-width: 1000px)
+        @apply text-fz36 leading-[100%]
+        &::after
+          @apply w-[32px] h-[32px]
+      @media screen and (max-width: 700px)
+        @apply text-fz16 pr-[32px]
+        &::after
+          @apply w-[24px] h-[24px]
+    &-imgs
+      @apply grid grid-cols-3 gap-[24px] py-[32px]
+      @media screen and (max-width: 1180px)
+        @apply  grid-cols-2
+      @media screen and (max-width: 700px)
+        @apply  grid-cols-1
+  &-tec
+    @apply mb-[80px]
+.privacy
+  &-title
+    @apply w-[1040px]
+  &-text
+    @apply col-span-10 col-start-2 mt-[80px]
+    @media screen and (max-width: 1180px)
+      @apply col-span-12
+    @media screen and (max-width: 960px)
+      @apply mt-[40px]
+    @media screen and (max-width: 600px)
+      @apply text-fz14 leading-[16px]
