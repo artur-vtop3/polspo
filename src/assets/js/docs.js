@@ -16,7 +16,7 @@ const firstAnim = document
 body.addEventListener('scroll', () => {
   const banner = document.querySelector('.main').getBoundingClientRect()
   if (banner.top < 0) {
-    const open = '/assets/img/menu.svg'
+    const open = './assets/img/menu.svg'
     menuBtn.src = open
     menu.classList.add('hidden')
   }
@@ -48,8 +48,8 @@ menuItems.forEach((element) => {
 })
 
 menuBtn.addEventListener('click', (e) => {
-  const close = '/assets/img/close.svg'
-  const open = '/assets/img/menu.svg'
+  const close = './assets/img/close.svg'
+  const open = './assets/img/menu.svg'
   console.log(e.target.src)
   e.target.src.includes(open) ? (e.target.src = close) : (e.target.src = open)
   menu.classList.toggle('hidden')
