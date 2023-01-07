@@ -15,25 +15,14 @@ menuItems.forEach((element) => {
   const link = element.querySelector('a')
   link.addEventListener('click', (e) => {
     e.preventDefault()
-    if (element.classList.contains('active')) {
-      element.classList.toggle('active')
-      return
-    }
-
-    const siblings = element.parentNode.childNodes
-    siblings.forEach((sibling) => {
-      sibling.classList.contains('active')
-        ? sibling.classList.remove('active')
-        : false
-    })
-    element.classList.add('active')
+    element.classList.toggle('active')
   })
 })
 
 menuBtn.addEventListener('click', (e) => {
   const close = '/assets/img/close.svg'
   const open = '/assets/img/menu.svg'
-  console.log(e.target.src)
+
   e.target.src.includes(open) ? (e.target.src = close) : (e.target.src = open)
   menu.classList.toggle('hidden')
 })
